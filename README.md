@@ -5,7 +5,9 @@ File modified but not committed
 File modified and will be in the commit snapshot
 ## Committed
 File is stored in the local database
+
 # Project sections
+![Project sections image](/screenshots/project-sections.png?raw=true)
 ## Working tree
 A single checkout of one version of the project.
 These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.
