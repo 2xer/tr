@@ -24,6 +24,11 @@ Its technical name in Git is the “index”.
 Where Git stores the metadata and object database for your project.
 This is the most important part of Git, and it is what is copied when you clone a repository from another computer.
 
+# Workflow
+1. Modify files in your working tree.
+2. Stage just those changes you want to be part of your next commit, which adds only those changes to the staging area.
+3. Commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+
 # Credit
 Pro Git book, written by Scott Chacon and Ben Straub and published by Apress.
 Available here https://git-scm.com/book/en/v2
