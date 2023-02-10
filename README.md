@@ -57,10 +57,19 @@ Now you can see in the in the commit history (`git log`) that the change I made 
 
 # Useful commands and flags
 
+## add
+1. Interactively choose hunks of patch between the index and the work tree and add them to the index.
+
+`git add -p`
+
 ## commit
 1. Automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
 
 `git commit -a`
+
+2. Reuse commit message from existing commit or last commit on current branch by using HEAD.
+
+`git commit --reuse-message=HEAD`
 
 ## log
 1. Show the commits in a graph and in a more concise and readable format.
