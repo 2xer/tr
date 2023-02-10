@@ -57,31 +57,41 @@ Now you can see in the in the commit history (`git log`) that the change I made 
 
 # Useful commands and flags
 
-## add
 1. Interactively choose hunks of patch between the index and the work tree and add them to the index.
 
 `git add -p`
 
-## commit
-1. Automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
+2. Automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
 
 `git commit -a`
 
-2. Reuse commit message from existing commit or last commit on current branch by using HEAD.
+3. Reuse commit message from existing commit or last commit on current branch by using HEAD.
 
 `git commit --reuse-message=HEAD`
 
-## log
-1. Show the commits in a graph and in a more concise and readable format.
+4. Show the commits in a graph and in a more concise and readable format.
 
 `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
 
-## status
-1. More compact status but uses 1 or 2 capital letters or symbols to represent changes to files (`man git-status`).
-
-Left-hand column shows status of files in the staging area while the right-hand column shows the status of files in the working tree.
+5. More compact status but uses 1 or 2 capital letters or symbols to represent changes to files (`man git-status`). Left-hand column shows status of files in the staging area while the right-hand column shows the status of files in the working tree.
 
 `git status -s`
+
+6. Show differences between the working tree and index.
+
+`git diff`
+
+7. Show differences between index and commit. If no commit is given, defaults to HEAD.
+
+`git diff --staged`
+
+8. Remove file from index. If no file is given, defaults to all files.
+
+`git reset`
+
+9. Remove file from index and working tree.
+
+`git rm`
 
 # Credits
 Pro Git book, written by Scott Chacon and Ben Straub and published by Apress.
