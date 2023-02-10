@@ -70,6 +70,8 @@ Now you can see in the in the commit history (`git log`) that the change I made 
 ## status
 1. More compact status but uses 1 or 2 capital letters or symbols to represent changes to files (`man git-status`).
 
+Left-hand column shows status of files in the staging area while the right-hand column shows the status of files in the working tree.
+
 `git status -s`
 
 # Credits
