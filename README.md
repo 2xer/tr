@@ -1,4 +1,5 @@
 # File states
+<img src="screenshots/file-states.png" width="350" height="200">
 
 ## Modified
 File modified but not committed
