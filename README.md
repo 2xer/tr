@@ -55,6 +55,23 @@ Then I delete the experimental branch.
 
 Now you can see in the in the commit history (`git log`) that the change I made to resolve the conflict is the (then) latest commit, with 2 parent commits <a href="https://github.com/2xer/tr/commit/19bdbb508b6dc4f62eeab66dfa062b62accca162">19bdbb5</a> and <a href="https://github.com/2xer/tr/commit/06d9bf492bd392ca9fbd74822bf93e3ba1caedf7">06d9bf4</a> instead of the normal 1.
 
+# Useful commands and flags
+
+## commit
+1. Automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
+
+`git commit -a`
+
+## log
+1. Show the commits in a graph and in a more concise and readable format.
+
+`git log --graph --decorate --abbrev-commit --all --pretty=oneline`
+
+## status
+1. More compact status but uses 1 or 2 capital letters or symbols to represent changes to files (`man git-status`).
+
+`git status -s`
+
 # Credits
 Pro Git book, written by Scott Chacon and Ben Straub and published by Apress.
 Available here https://git-scm.com/book/en/v2
